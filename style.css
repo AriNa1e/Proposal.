@@ -277,3 +277,155 @@ body{
         transform: translateY(0) scale(1);
     }
 }
+
+/* --------------------------------MOBILE RESPONSIVE-------------------------------- */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-wrap: wrap;
+        font-size: 16px;
+    }
+
+    .nav-bar a {
+        font-size: 16px;
+        padding: 6px 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #the_perfect_girl {
+        font-size: 32px;
+        margin: 30px 0 0 0;
+        text-align: center;
+    }
+
+    #line {
+        display: none;
+    }
+
+    #cat_pic {
+        margin: 0;
+        height: 250px;
+        width: 250px;
+    }
+
+    #test {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        font-size: large;
+    }
+
+    #home_main1, #home_main2, #home_main3, #home_main4, #home_main5, #home_main6 {
+        width: 90%;
+        height: auto;
+        margin: 100px auto 20px;
+        font-size: large;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    #home_main7 {
+        width: 90%;
+        height: auto;
+        font-size: 28px;
+        margin: 60px auto 20px;
+        margin-left: auto !important;
+    }
+
+    .question-label {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+
+    .answer-button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        margin: 0 8px;
+    }
+
+    #response-message {
+        font-size: 1.5rem;
+        margin-top: 15px;
+    }
+
+    #space1 {
+        margin-top: 500px;
+    }
+
+    #space2 {
+        margin-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        padding: 5px 0;
+        margin-bottom: 10px;
+    }
+
+    .nav-bar a {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
+
+    #the_perfect_girl {
+        font-size: 24px;
+        margin: 20px 0 0 0;
+    }
+
+    #cat_pic {
+        height: 180px;
+        width: 180px;
+    }
+
+    #test {
+        font-size: medium;
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    #home_main1, #home_main2, #home_main3, #home_main4, #home_main5, #home_main6 {
+        width: 95%;
+        font-size: medium;
+        margin: 60px auto 15px;
+    }
+
+    #home_main7 {
+        width: 95%;
+        font-size: 20px;
+        margin: 40px auto 15px;
+    }
+
+    .question-label {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    .answer-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+        margin: 5px 4px;
+    }
+
+    .no-button::after {
+        font-size: 1rem;
+    }
+
+    #response-message {
+        font-size: 1.2rem;
+    }
+
+    #space1 {
+        margin-top: 300px;
+    }
+
+    #space2 {
+        margin-top: 50px;
+    }
+}
