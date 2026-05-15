@@ -1,12 +1,11 @@
-* {
+body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body{
     min-height: 100vh;
     background: linear-gradient(rgb(255, 236, 239), pink, rgb(145, 94, 145));
+}
+
+* {
     transition: all 0.3s ease;
 }
 
@@ -15,14 +14,13 @@ body{
 .nav-bar {
     font-family: Great Vibes, cursive;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
-    padding: clamp(8px, 2vw, 15px) clamp(10px, 3vw, 20px);
-    margin-bottom: clamp(10px, 3vw, 25px);
+    padding: 10px 0;
+    margin-bottom: 20px;
     background-color: rgb(255, 236, 239);
     transition: background-color 0.3s ease;
-    gap: clamp(5px, 2vw, 15px);
 }
 
 .nav-bar:hover {
@@ -31,7 +29,7 @@ body{
 
 .nav-bar h3 {
     margin: 0;
-    font-size: clamp(16px, 4vw, 24px);
+    font-size: 24px;
     cursor: pointer;
     transition: color 0.2s ease;
 }
@@ -41,8 +39,8 @@ body{
     text-decoration: none;
     display: inline-flex;
     white-space: nowrap;
-    font-size: clamp(14px, 3.5vw, 24px);
-    padding: clamp(6px, 1.5vw, 12px) clamp(8px, 2vw, 12px);
+    font-size: 24px;
+    padding: 8px 12px;
     cursor: pointer;
     transition: color 0.2s ease, background-color 0.2s ease;
 }
@@ -61,92 +59,145 @@ body{
 
 .container {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: clamp(10px, 4vw, 30px);
-    padding: clamp(15px, 5vw, 30px);
+    align-items: auto;
+    justify-content: auto;
 }
 
 #the_perfect_girl{
     font-family: Great Vibes, cursive;
     text-align: center;
-    font-size: clamp(28px, 8vw, 60px);
-    margin: clamp(10px, 3vw, 30px) 0;
-    flex: 1;
-    min-width: 200px;
+    margin-top: 100px;
+    margin-left: 150px;
+    font-size: 50px;
+    margin-right: 20px;
 }
 
 #line{
-    display: none;
+    position: absolute;
+    top: 30px;
+    left: 575px;
     pointer-events: none;
 }
 
+
 #cat_pic{
-    height: clamp(200px, 40vw, 400px);
-    width: clamp(200px, 40vw, 400px);
-    object-fit: contain;
+    margin-left: 100px;
+    height: 380px;
+    width: 373px;
 }
 
 /*--------------------------------------BODY--------------------------------------*/
 
 #test{
     font-family: Great vibes, cursive;
-    font-size: clamp(16px, 4vw, 20px);
+    font-size: x-large;
     color: black;
     border: 1px;
-    width: clamp(90%, 80vw, 500px);
-    margin: clamp(20px, 5vw, 40px) auto;
-    padding: clamp(15px, 3vw, 25px);
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 280px;
+    left: 640px;
 }
 
 #temp{
     margin-top: 90px;
 }
 
-#home_main1, #home_main2, #home_main3, #home_main4, #home_main5, #home_main6 {
+#home_main1{
     font-family: Great vibes, cursive;
-    font-size: clamp(16px, 4vw, 20px);
+    font-size: x-large;
     color: black;
     border: 1px;
-    width: clamp(90%, 80vw, 500px);
-    margin: clamp(60px, 10vw, 120px) auto clamp(15px, 3vw, 25px);
-    padding: clamp(15px, 3vw, 25px);
+    width: 450px;
+    height: 250px;
+    margin-left: 60%
+}
+
+#home_main2{
+    font-family: Great vibes, cursive;
+    font-size: x-large;
+    color: black;
+    border: 1px;
+    width: 350px;
+    height: 250px;
+    margin-left: 10%;
+    margin-top: 200px;
+}
+
+#home_main3{
+    font-family: Great vibes, cursive;
+    font-size: x-large;
+    color: black;
+    border: 1px;
+    width: 350px;
+    height: 250px;
+    margin-left: 60%;
+}
+
+#home_main4{
+    font-family: Great vibes, cursive;
+    font-size: x-large;
+    color: black;
+    border: 1px;
+    width: 350px;
+    height: 250px;
+    margin-left: 10%;
+}
+
+#home_main5{
+    font-family: Great vibes, cursive;
+    font-size: x-large;
+    color: black;
+    border: 1px;
+    width: 350px;
+    height: 250px;
+    margin-left: 60%;
+}
+
+#home_main6{
+    font-family: Great vibes, cursive;
+    font-size: x-large;
+    color: black;
+    border: 1px;
+    width: 350px;
+    height: 250px;
+    margin-left: 10%;
 }
 
 #home_main7{
     font-family: Great vibes, cursive;
-    font-size: clamp(24px, 6vw, 50px);
+    font-size: 50px;
     color: black;
     text-align: center;
     border: 1px;
-    width: clamp(90%, 85vw, 900px);
-    margin: clamp(60px, 10vw, 120px) auto clamp(20px, 5vw, 40px);
-    padding: clamp(15px, 3vw, 30px);
+    width: 925px;
+    height: 250px;
+    margin-left: 16%;
+    Margin-top: 100px;
 }
 
 .question-block {
     text-align: center;
-    margin: 0 auto clamp(20px, 5vw, 50px);
+    margin: 0 auto 40px;
     width: 100%;
-    padding: clamp(10px, 2vw, 20px);
 }
 
 .question-label {
     display: block;
     font-family: Great Vibes, cursive;
-    font-size: clamp(18px, 5vw, 32px);
+    font-size: 2rem;
     color: black;
-    margin-bottom: clamp(12px, 3vw, 20px);
+    margin-bottom: 18px;
 }
 
 .answer-button {
     font-family: Great Vibes, cursive;
-    font-size: clamp(16px, 4vw, 28px);
-    padding: clamp(8px, 2vw, 16px) clamp(16px, 4vw, 32px);
-    margin: clamp(5px, 1.5vw, 12px);
+    font-size: 2rem;
+    padding: 12px 28px;
+    margin: 0 12px;
     border: 2px solid #ab8ec6;
-    border-radius: clamp(8px, 2vw, 16px);
+    border-radius: 14px;
     background: white;
     color: black;
     cursor: pointer;
@@ -186,11 +237,10 @@ body{
 
 #response-message {
     font-family: Great Vibes, cursive;
-    font-size: clamp(16px, 4vw, 28px);
+    font-size: 2rem;
     color: black;
-    margin-top: clamp(15px, 3vw, 30px);
+    margin-top: 20px;
     text-align: center;
-    padding: clamp(10px, 2vw, 20px);
 }
 
 .hidden-message {
@@ -205,11 +255,11 @@ body{
 }
 
 #space1{
-    margin-top: clamp(300px, 50vh, 9000px);
+    margin-top: 9000px;
 }
 
 #space2{
-    margin-top: clamp(50px, 10vh, 200px);
+    margin-top: 200px;
 }
 
 .autoshow{
