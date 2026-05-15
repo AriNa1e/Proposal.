@@ -59,31 +59,32 @@ body{
 
 .container {
     display: flex;
-    align-items: auto;
-    justify-content: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
 }
 
 #the_perfect_girl{
     font-family: Great Vibes, cursive;
     text-align: center;
-    margin-top: 100px;
-    margin-left: 150px;
     font-size: 50px;
-    margin-right: 20px;
+    margin: 20px 0;
+    flex: 1;
+    min-width: 250px;
 }
 
 #line{
-    position: absolute;
-    top: 30px;
-    left: 575px;
+    display: none;
     pointer-events: none;
 }
 
 
 #cat_pic{
-    margin-left: 100px;
     height: 380px;
     width: 373px;
+    object-fit: contain;
 }
 
 /*--------------------------------------BODY--------------------------------------*/
@@ -93,11 +94,9 @@ body{
     font-size: x-large;
     color: black;
     border: 1px;
-    width: 400px;
-    height: 250px;
-    position: absolute;
-    top: 280px;
-    left: 640px;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
 }
 
 #temp{
@@ -109,9 +108,9 @@ body{
     font-size: x-large;
     color: black;
     border: 1px;
-    width: 450px;
-    height: 250px;
-    margin-left: 60%
+    max-width: 500px;
+    margin: 100px auto 20px;
+    padding: 20px;
 }
 
 #home_main2{
@@ -119,10 +118,9 @@ body{
     font-size: x-large;
     color: black;
     border: 1px;
-    width: 350px;
-    height: 250px;
-    margin-left: 10%;
-    margin-top: 200px;
+    max-width: 500px;
+    margin: 100px auto 20px;
+    padding: 20px;
 }
 
 #home_main3{
@@ -130,9 +128,9 @@ body{
     font-size: x-large;
     color: black;
     border: 1px;
-    width: 350px;
-    height: 250px;
-    margin-left: 60%;
+    max-width: 500px;
+    margin: 100px auto 20px;
+    padding: 20px;
 }
 
 #home_main4{
@@ -140,9 +138,9 @@ body{
     font-size: x-large;
     color: black;
     border: 1px;
-    width: 350px;
-    height: 250px;
-    margin-left: 10%;
+    max-width: 500px;
+    margin: 100px auto 20px;
+    padding: 20px;
 }
 
 #home_main5{
@@ -150,9 +148,9 @@ body{
     font-size: x-large;
     color: black;
     border: 1px;
-    width: 350px;
-    height: 250px;
-    margin-left: 60%;
+    max-width: 500px;
+    margin: 100px auto 20px;
+    padding: 20px;
 }
 
 #home_main6{
@@ -160,9 +158,9 @@ body{
     font-size: x-large;
     color: black;
     border: 1px;
-    width: 350px;
-    height: 250px;
-    margin-left: 10%;
+    max-width: 500px;
+    margin: 100px auto 20px;
+    padding: 20px;
 }
 
 #home_main7{
@@ -171,10 +169,9 @@ body{
     color: black;
     text-align: center;
     border: 1px;
-    width: 925px;
-    height: 250px;
-    margin-left: 16%;
-    Margin-top: 100px;
+    max-width: 900px;
+    margin: 100px auto 30px;
+    padding: 20px;
 }
 
 .question-block {
@@ -282,7 +279,6 @@ body{
 @media (max-width: 768px) {
     .nav-bar {
         flex-wrap: wrap;
-        font-size: 16px;
     }
 
     .nav-bar a {
@@ -290,57 +286,27 @@ body{
         padding: 6px 10px;
     }
 
-    .container {
-        flex-direction: column;
-        align-items: center;
-    }
-
     #the_perfect_girl {
         font-size: 32px;
-        margin: 30px 0 0 0;
-        text-align: center;
-    }
-
-    #line {
-        display: none;
     }
 
     #cat_pic {
-        margin: 0;
         height: 250px;
         width: 250px;
     }
 
-    #test {
-        position: relative;
-        top: auto;
-        left: auto;
-        width: 90%;
-        height: auto;
-        margin: 20px auto;
+    #test, #home_main1, #home_main2, #home_main3, #home_main4, #home_main5, #home_main6 {
         font-size: large;
-    }
-
-    #home_main1, #home_main2, #home_main3, #home_main4, #home_main5, #home_main6 {
-        width: 90%;
-        height: auto;
-        margin: 100px auto 20px;
-        font-size: large;
-        margin-left: auto !important;
-        margin-right: auto !important;
+        max-width: 90%;
     }
 
     #home_main7 {
-        width: 90%;
-        height: auto;
-        font-size: 28px;
-        margin: 60px auto 20px;
-        margin-left: auto !important;
+        font-size: 32px;
+        max-width: 90%;
     }
 
     .question-label {
         font-size: 1.5rem;
-        margin-bottom: 12px;
     }
 
     .answer-button {
@@ -351,32 +317,21 @@ body{
 
     #response-message {
         font-size: 1.5rem;
-        margin-top: 15px;
     }
 
     #space1 {
         margin-top: 500px;
     }
-
-    #space2 {
-        margin-top: 100px;
-    }
 }
 
 @media (max-width: 480px) {
-    .nav-bar {
-        padding: 5px 0;
-        margin-bottom: 10px;
-    }
-
     .nav-bar a {
-        font-size: 14px;
+        font-size: 13px;
         padding: 4px 8px;
     }
 
     #the_perfect_girl {
-        font-size: 24px;
-        margin: 20px 0 0 0;
+        font-size: 22px;
     }
 
     #cat_pic {
@@ -384,27 +339,19 @@ body{
         width: 180px;
     }
 
-    #test {
+    #test, #home_main1, #home_main2, #home_main3, #home_main4, #home_main5, #home_main6 {
         font-size: medium;
-        width: 95%;
-        margin: 15px auto;
-    }
-
-    #home_main1, #home_main2, #home_main3, #home_main4, #home_main5, #home_main6 {
-        width: 95%;
-        font-size: medium;
-        margin: 60px auto 15px;
+        max-width: 95%;
+        margin: 60px auto 15px !important;
     }
 
     #home_main7 {
-        width: 95%;
         font-size: 20px;
-        margin: 40px auto 15px;
+        max-width: 95%;
     }
 
     .question-label {
         font-size: 1.2rem;
-        margin-bottom: 10px;
     }
 
     .answer-button {
@@ -423,9 +370,5 @@ body{
 
     #space1 {
         margin-top: 300px;
-    }
-
-    #space2 {
-        margin-top: 50px;
     }
 }
